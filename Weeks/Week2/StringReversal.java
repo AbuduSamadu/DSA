@@ -23,11 +23,11 @@ public class StringReversal {
     }
 
     public static void main(String[] args) {
-        String input = "hello";
+        String input = "ooneefspd";
 
         // Reverse characters from index 1 to index 3
-        int start = 1;
-        int end = 3;
+        int start = 0;
+        int end = 8;
 
         String result = reverseSubstring(input, start, end);
 
