@@ -1,4 +1,4 @@
-package DMatrix
+package DMatrix;
 
 public class Matrix {
 

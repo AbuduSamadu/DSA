@@ -1,6 +1,4 @@
-package 
-
-2DMatrix;
+package DMatrix;
 
 public class Snippet {
 
