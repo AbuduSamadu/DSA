@@ -1,4 +1,6 @@
-package Quiz;
+package 
+
+2DMatrix;
 
 public class Snippet {
 

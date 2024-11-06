@@ -1,4 +1,4 @@
-package Quiz;
+package DMatrix
 
 public class Matrix {
 

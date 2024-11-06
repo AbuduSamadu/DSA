@@ -1,4 +1,3 @@
-package Quiz;
 
 public class Transpose {
 
