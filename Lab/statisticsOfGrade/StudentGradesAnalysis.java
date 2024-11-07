@@ -61,9 +61,9 @@ public class StudentGradesAnalysis {
             System.out.print("   " + i + " > ");
             for (int stat : stats) {
                 if (stat >= i) {
-                    System.out.print(" ####### ");
+                    System.out.print(" #######   ");
                 } else {
-                    System.out.print("         " );
+                    System.out.print("           " );
                 }
             }
             System.out.println();
