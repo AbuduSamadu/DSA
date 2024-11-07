@@ -1,7 +1,6 @@
 package Weeks.Week2;
 
 import java.util.Arrays;
-
 public class Remove {
 
     public int removeDuplicates(int[] nums) {
