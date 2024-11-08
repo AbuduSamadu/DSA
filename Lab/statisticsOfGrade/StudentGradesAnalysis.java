@@ -7,6 +7,9 @@ public class StudentGradesAnalysis {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        try {
+            
+       
         // Step 1: Input Handling
         System.out.println("Enter student grades separated by spaces (0 - 100):");
         String input = scanner.nextLine();
@@ -51,7 +54,11 @@ public class StudentGradesAnalysis {
         // Step 5: Display Graph
         displayGraph(stats);
 
-        scanner.close();
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input. Please enter valid numbers.");
+        } finally {
+            scanner.close();
+        }
     }
 
     public static void displayGraph(int[] stats) {

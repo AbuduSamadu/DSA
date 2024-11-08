@@ -6,25 +6,32 @@ class PeakColumns {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Read matrix dimensions
-        System.out.print("Enter the number of rows: ");
-        int rows = scanner.nextInt();
-        System.out.print("Enter the number of columns: ");
-        int cols = scanner.nextInt();
+        try {
+            // Read matrix dimensions
+            System.out.print("Enter the number of rows: ");
+            int rows = scanner.nextInt();
+            System.out.print("Enter the number of columns: ");
+            int cols = scanner.nextInt();
 
-        // Initialize the matrix
-        int[][] matrix = new int[rows][cols];
+            // Initialize the matrix
+            int[][] matrix = new int[rows][cols];
 
-        // Read matrix elements
-        System.out.println("Enter the matrix elements:");
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                matrix[i][j] = scanner.nextInt();
+            // Read matrix elements
+            System.out.println("Enter the matrix elements:");
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < cols; j++) {
+                    matrix[i][j] = scanner.nextInt();
+                }
             }
-        }
 
-        // Find and display peak-columns
-        findPeakColumns(matrix, rows, cols);
+            // Find and display peak-columns
+            findPeakColumns(matrix, rows, cols);
+
+        } catch (Exception e) {
+            System.out.println("Invalid input. Please try enter Numbers .");
+        } finally {
+            scanner.close();
+        }
     }
 
     private static void findPeakColumns(int[][] matrix, int rows, int cols) {

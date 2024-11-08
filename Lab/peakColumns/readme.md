@@ -16,11 +16,12 @@ This Java console application finds and displays all "peak-columns" in a user-pr
 
 This project aims to:
 
-- Demonstrate understanding of programming concepts such as variables, loops, and conditional statements.
-- Build proficiency with 2D arrays, including horizontal and vertical iteration.
-- Manage user input and perform data type casting in Java.
-- Apply string formatting for organized, readable output.
-- Analyze problem requirements and design algorithms to solve mathematical problems.
+- Understanding of programming concepts such as variables, loops, and conditional statements.
+- Proficiency in creating and manipulating 2 dimensions arrays (horizontal & vertical looping in 2D arrays)
+- Ability to control user input and casting of data from one type to another
+- Understanding of string formatting techniques to display in a readable and organized format.
+- Ability to analyze the problem requirements and develop algorithms to solve mathematical problems
+
 
 ## Features
 
@@ -45,8 +46,9 @@ This project aims to:
 1. **Clone or Download the Repository**:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/AbuduSamadu/DSA/tree/main/Lab/peakColumns
+   
+   cd DSA/Lab/peakColumns
 
 2. **Compile the Java Program**:
 
@@ -74,26 +76,20 @@ java PeakColumns
 Enter the number of rows for the matrix: 3
 Enter the number of columns for the matrix: 3
 Enter the elements of the matrix:
-1 2 3
-4 5 6
-7 8 9
+12 2 4
+17 10 1
+92 80 79
 ```
 
 ### Sample Output
 
 ```plaintext
-Enter the number of rows for the matrix: 3
-Enter the number of columns for the matrix: 3
-Enter the elements of the matrix:
-1 2 3
-4 5 6
-7 8 9
-
-Peak-Columns:
-1: 7 (row: 1, column: 2)
-2: 8 (row: 2, column: 2)
-3: 9 (row: 3, column: 2)
+(1, 1): 12
 ```
+
+### Sample Output
+
+![Screenshots](./Screenshot%20(5).png)
 
 ## Grading Criteria
 
@@ -107,7 +103,7 @@ Peak-Columns:
 
 ## Note
 
-Input Validation: The program will terminate if the dimensions of the matrix do not match the input criteria.
+- Input Validation: The program will terminate if the dimensions of the matrix do not match the input criteria or if the input elements are not integers.
 
 ## Conclusion
 
