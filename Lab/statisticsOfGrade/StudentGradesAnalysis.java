@@ -1,3 +1,4 @@
+package Lab.statisticsOfGrade;
 
 import java.util.Arrays;
 import java.util.Scanner;

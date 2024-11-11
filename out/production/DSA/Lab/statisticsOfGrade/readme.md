@@ -75,31 +75,13 @@ Exit: After displaying results, the program will terminate automatically.
 ### Sample Input
 
 ```plaintext
-Enter the 20 grades: 85 92 88 78 60 45 75 80 95 100 65 70 55 5 40 35 30 25 20 15
+Enter the 20 grades:2 20 21 22 23 30 48 49 50 55 60 65 72 63 76 80 68 90 85 98
+
 ```
 
 ### Sample Output
 
-```plaintext
-Maximum Grade: 100
-Minimum Grade: 5
-Average Grade: 59.5
-
-Grade Distribution:
-0-20: 2
-21-40: 3
-41-60: 5
-61-80: 6
-81-100: 4
-
-Grade Distribution Graph:
-0-20: 10.0% | ▓▓
-21-40: 15.0% | ▓▓▓
-41-60: 25.0% | ▓▓▓▓▓
-61-80: 30.0% | ▓▓▓▓▓▓
-81-100: 20.0% | ▓▓▓▓
-```
-![Build Status](./Screenshot%20(1).png)
+![Build Status](./Screenshot%20(7).png)
 
 ## Project Structure
 
@@ -125,8 +107,10 @@ displayGraph(): Generates and displays the bar graph.
 
 ## Note
 
-Input Validation: The program will terminate if if any grade falls outside the 0-100 range.
+Input Validation: The program will terminate if if any grade falls outside the 0-100 rang or if the input is not an integer.
+
 Dynamic Graph: The bar graph adjusts to the grade distribution dynamically based on the input.
+
 
 ## Conclusion
 
