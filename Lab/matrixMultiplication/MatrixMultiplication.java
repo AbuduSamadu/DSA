@@ -1,3 +1,4 @@
+package Lab.matrixMultiplication;
 
 import java.util.Scanner;
 

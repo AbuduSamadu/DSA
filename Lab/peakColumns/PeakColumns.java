@@ -1,3 +1,4 @@
+package Lab.peakColumns;
 
 import java.util.Scanner;
 
@@ -21,9 +22,19 @@ class PeakColumns {
             for (int i = 0; i < rows; i++) {
                 for (int j = 0; j < cols; j++) {
                     matrix[i][j] = scanner.nextInt();
-                }
-            }
 
+                }
+
+            }
+            for (int i = 0; i< rows; i++){
+                int j;
+                for(j=0 ; j< cols; j++){
+                    System.out.print(matrix[i][j] + " ");
+
+                }
+                j=0;
+                System.out.println(" ");
+            }
             // Find and display peak-columns
             findPeakColumns(matrix, rows, cols);
 
@@ -35,12 +46,17 @@ class PeakColumns {
     }
 
     private static void findPeakColumns(int[][] matrix, int rows, int cols) {
+        int peakCounter = 0;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 if (isPeakColumn(matrix, i, j, rows, cols)) {
+                    peakCounter++;
                     System.out.println("(" + (i + 1) + "," + (j + 1) + ") = " + matrix[i][j]);
                 }
             }
+        }
+        if(peakCounter == 0){
+            System.out.println("No peak columns found.");
         }
     }
 
