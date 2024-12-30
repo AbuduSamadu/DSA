@@ -1,3 +1,4 @@
+package Weeks.week1;
 
 class CupCake {
 

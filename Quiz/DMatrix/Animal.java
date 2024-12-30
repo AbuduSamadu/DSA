@@ -1,3 +1,4 @@
+package Quiz.DMatrix;
 
 class Animal {
 
@@ -20,7 +21,7 @@ class Dog extends Animal {
     }
 }
 
-public class Main {
+class Main {
 
     public static void main(String[] args) {
         Animal dog = new Dog();
